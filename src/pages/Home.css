@@ -1,0 +1,11 @@
+.main-home{
+    display: flex;
+    justify-content: space-between;
+}
+.profile{
+    background: lightgray;
+    color: black;
+    padding: 0 3px;
+    border-radius: 5px;
+    padding: 0 10px;
+}

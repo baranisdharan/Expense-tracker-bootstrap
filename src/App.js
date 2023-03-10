@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment, useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import MainNavigation from "./components/MainNavigation";
+import SignUp from "./pages/SignUp";
+import Home from "./pages/Home";
+import { UpdateProfile } from "./components/UpdateProfile";
+import { ForgotPassword } from "./components/ForgotPassword";
+import Expenses from "./pages/Expenses";
+import Premium from "./components/Premium";
+import { useSelector } from "react-redux";
+import "./App.css";
 
 function App() {
+  const themeMode = useSelector((state) => state.theme.theme);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <MainNavigation />
+      <div className={themeMode === "dark" ? "dark" : ""}>
+        <Premium />
+        <Routes>
+          <Route path="" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/expenses" element={<Expenses />} />
+          <Route path="/login" element={<SignUp />} />
+          <Route path="/update" element={<UpdateProfile />} />
+          <Route path="/forgotpassword" element={<ForgotPassword />} />
+        </Routes>
+      </div>
+    </Fragment>
   );
 }
 
