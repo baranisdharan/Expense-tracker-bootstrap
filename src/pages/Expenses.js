@@ -6,35 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { expenseAction } from "../store/Expense";
 
 const Expenses = () => {
-  // async function fetchExpenses() {
-  //   try {
-  //     const res = await fetch(
-  //       `https://expense-tracker-760b4-default-rtdb.firebaseio.com/expense-tracker.json`,
-  //       {
-  //         method: "GET",
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //       }
-  //     );
-
-  //     const data = await res.json();
-  //     console.log(data);
-
-  //     if (res.ok) {
-  //       const newdata = [];
-  //       for (let key in data) {
-  //         newdata.push({ id: key, ...data[key] });
-  //       }
-
-  //       setExpenses(newdata);
-  //     } else {
-  //       throw data.error;
-  //     }
-  //   } catch (error) {
-  //     console.log(error.message);
-  //   }
-  // }
+  
   const dispatch = useDispatch();
   const inputAmountRef = useRef();
   const inputDescRef = useRef();
