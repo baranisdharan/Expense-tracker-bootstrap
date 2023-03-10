@@ -1,0 +1,19 @@
+li {
+  margin: 30px;
+}
+
+li button {
+  cursor: pointer;
+  margin: 2px;
+  padding: 2px 4px;
+  color: white;
+  border-radius: 5px;
+  float: right;
+}
+
+.bg-red {
+  background-color: red;
+}
+.bg-blue {
+  background-color: blue;
+}

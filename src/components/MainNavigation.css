@@ -1,0 +1,19 @@
+.mainNav {
+    position: sticky;
+    width: 100%;
+    border-bottom: 5px solid gray;
+    padding-bottom: 10px;
+  }
+  
+  .mainNav nav {
+    box-sizing: border-box;
+    width: 70%;
+    text-align: left;
+    display: inline-block;
+  }
+  
+  .mainNav li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px 0 30px;
+  }

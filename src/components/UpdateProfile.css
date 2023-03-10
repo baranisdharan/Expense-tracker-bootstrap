@@ -1,0 +1,25 @@
+.main-update-profile {
+  display: flex;
+  justify-content: space-between;
+}
+.profile-update {
+  background: lightgray;
+  color: black;
+  padding: 0 3px;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+.main-update-form {
+  margin-top: 100px;
+}
+.form label {
+  font-weight: bold;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin: 20px 0 20px 0;
+  box-sizing: border-box;
+}
